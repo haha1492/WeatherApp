@@ -1,0 +1,50 @@
+/* 🌞 Light Mode (Default) */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333;
+  --card-bg: #f9f9f9;
+  --button-bg: #007bff;
+  --button-text: #ffffff;
+}
+
+/* 🌙 Dark Mode */
+.dark-mode {
+  --bg-color: #181818;
+  --text-color: #000;
+  --card-bg: #222;
+  --button-bg: #444;
+  --button-text: #ffffff;
+}
+
+/* Apply theme to the body */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Weather container */
+.weather-container {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Buttons */
+button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  padding: 10px 15px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Toggle Button */
+.toggle-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
